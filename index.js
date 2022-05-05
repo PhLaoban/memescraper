@@ -1,4 +1,4 @@
-import fs, { mkdir } from 'node:fs';
+import fs from 'node:fs';
 import https from 'node:https';
 import fetch from 'node-fetch';
 
@@ -16,12 +16,9 @@ while ((i = rex.exec(str))) {
   urls.push(i[1]);
 }
 
-const link =
-  'https://api.memegen.link/images/bad/your_meme_is_bad/and_you_should_feel_bad.jpg?width=300';
-
 const urlcode = urls.slice(0, 10);
 
-let dir = './Memes/';
+const dir = './Memes/';
 
 if (!fs.existsSync(dir)) {
   fs.mkdirSync(dir, { recursive: true });

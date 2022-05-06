@@ -31,7 +31,7 @@ const dir = './memes/';
 if (!fs.existsSync(dir)) {
   fs.mkdirSync(dir, { recursive: true });
 } else {
-  console.log('error');
+  console.log();
 }
 
 // created a loop which counts through the whole url array, saves them as jpg and renames them up from 1-10

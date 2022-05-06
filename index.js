@@ -24,7 +24,7 @@ const urlcode = urls.slice(0, 10);
 
 // created another variable just for the saving folder
 
-const dir = './Memes/';
+const dir = './memes/';
 
 // if else statement that actually creates the folder of the "dir" variable (if this folder doesn't exist -> create a new one with mkdirsync)
 
